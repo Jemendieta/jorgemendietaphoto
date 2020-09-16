@@ -1,5 +1,5 @@
 /* estilos de la web JorgeMendietaPhoto*/
-/* estilos base */
+/** estilos base */
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +12,12 @@ body {
 a {
   text-decoration: none;
 }
-.container {
+.gallery-container {
   width: 90%;
-  max-width: 800px;
+  max-width: 100%px;
   margin: auto;
 }
-/* Estilos Header */
+/** Estilos Header */
 header {
   padding: 40px;
 }
@@ -67,7 +67,7 @@ header .categorias a {
 header .categorias a.activo {
   color: #000;
 }
-/* grid galery */
+/** grid galery */
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -135,3 +135,10 @@ header .categorias a.activo {
   grid-column-start: span 2;
 
 } */
+
+/** Media queries */
+@media (min-width: 768) {
+  .gallery-container {
+    grid-template-columns: repeat(4, fr);
+  }
+}
