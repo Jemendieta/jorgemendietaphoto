@@ -71,7 +71,7 @@ header .categorias a.activo {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 350px;
+  grid-auto-rows: 450px;
   padding: 20px;
   grid-gap: 10px;
 }
